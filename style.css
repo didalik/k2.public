@@ -4,6 +4,7 @@ html {
 
 html,
 body {
+  font-family: monospace;
   height: 100%;
   margin: 3x;
   padding: 0;
