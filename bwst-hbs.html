@@ -10,15 +10,14 @@
     <h3>Basic WebSocket Test</h3>
 This WebSocket client runs in a browser. Two more clients run locally in Node JS.
 All clients share the same code and connect to CF DO WebSocket Server with Hibernate.
-Each client sends 2 messages to the server.
-<p>
-For this test, the server broadcasts whatever a client sends it to all other clients
-and closes a client's connection having sent 4 messages to it (or after connection's
-INACTIVITY_TIMEOUT_MS expires).</p>
+Each client sends 3 messages to the server. The server broadcasts whatever a client
+sends it to all other clients and closes a client's connection having sent 6 messages
+to it.</p>
 <p>
 Before sending the second message, a client waits long enough for the server side to
 hibernate on the connection. A client can still send a message after the server
-closes its connection.
+closes its connection - the server's <i>ctx.getWebSockets()</i> call returns clients
+with <i>readyState == 2</i> (CLOSING).
 </p><hr/>
 <p id='content1'>
 </p>
