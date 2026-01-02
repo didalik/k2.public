@@ -14,7 +14,7 @@ Each client sends 3 messages to the server. The server broadcasts whatever a cli
 sends it to all other clients and closes a client's connection having sent 6 messages
 to it.</p>
 <p>
-Before sending the second message, a client waits long enough for the server side to
+Having sent the first message, a client waits long enough for the server side to
 hibernate on the connection. A client can still send a message after the server
 closes its connection - the server's <i>ctx.getWebSockets()</i> call returns clients
 with <i>readyState == 2</i> (CLOSING).
