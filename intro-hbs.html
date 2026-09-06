@@ -13,37 +13,37 @@
 Welcome to the Kloud Of Trust - the cloud-native, role-based organization of coders
 and testers. At present, it is my hobby project with three more hobby projects in it:
 <ul>
-  <li>Stellar TESTNET Monitor,</li>
-  <li>Cloudflare Job Fair, and</li>
-  <li>Stellar Help Exchange.</li>
+  <li><a href='https://stellar.org/' target='_blank'>Stellar</a> TESTNET Monitor (<b>TM</b>),</li>
+  <li><a href='https://www.cloudflare.com/' target='_blank'>Cloudflare</a> Job Fair (<b>jF</b>), and</li>
+  <li>Stellar Help Exchange (<b>hX</b>).</li>
 </ul>
     </p><p>
-Stellar TESTNET Monitor listens for Job Requests from Job Users and gates them as needed using 
-<a href='https://developers.stellar.org/docs/learn/fundamentals/liquidity-on-stellar-sdex-liquidity-pools' target='_blank'>Stellar DEX</a> trades. When a Job Request is granted,
-the monitor starts the corresponding Job Agent. This serverless solution gives you
-a 24/7 listener behind your Internet Service Provider. See my
+The <b>TM</b> is a 
+<a href='https://developers.stellar.org/docs/learn/fundamentals/liquidity-on-stellar-sdex-liquidity-pools' target='_blank'>Stellar DEX</a>-based semaphore
+to gate and queue <b>jF</b> Job Requests. When a Job Request is granted,
+<b>TM</b> starts the corresponding Job Agent. This serverless solution enables
+a 24/7 listener behind my ISP. See
 <a href='https://github.com/didalik/k2.hx' target='_blank'>k2.hx</a> GitHub repo for details.
     </p><p>
-<a href='https://www.cloudflare.com/' target='_blank'>Cloudflare</a> Job Fair matches
-Job Agents (digital content producers) with Job Users
-(digital content consumers) for a given Job and facilitates the data flow between
-them. I employ
+The <b>jF</b> matches Job Agents (digital content producers) with Job Users
+(digital content consumers) for a given Job and facilitates the data flow between them. I employ
 <a href='https://developers.cloudflare.com/durable-objects/best-practices/websockets' target='_blank'>Hibernation WebSocket API</a>
 to implement a Match → Relay handshake that pairs up two sockets (a Job Offer from the
 Job Agent and a Job Request from the Job User) and then relays messages between the paired.
 The SDK is
 <a href='https://github.com/didalik/k2.jf/blob/main/lib/sdk.js' target='_blank'>on GitHub</a>.
     </p><p>
-<a href='https://stellar.org/' target='_blank'>Stellar</a> Help Exchange provides an 
-equitable marketplace, where job users pay job agents
+The <b>hX</b> provides an equitable marketplace, where job users pay job agents
 for jobs done - or get full refund otherwise. My
 <a href='https://github.com/didalik/k2.hx' target='_blank'>k2.hx</a> GitHub repo has more
-details - sequence diagrams, API and SDK.
+details - sequence diagrams, API and SDK. There is also a small
+<a href='https://qa.hx.kloudoftrust.org/tm' target='_blank'>demo</a> based on
+<a href='https://www.youtube.com/watch?v=y4TELgx28D4' target='_blank'>this YouTube video</a>.
+Technically, it is a  <b>TM</b>/<b>jF</b>/<b>hX</b> integration test.
     </p><p>
-I believe these are the first steps needed to make the Internet a better place
-for you and me. So, if you are a coder or a tester - consider joining me on GitHub! 
-As a coder, you'll be
-rewarded by the users of your code. As a tester, you'll get paid for your resources.
+I believe these are small but necessary steps to make the Internet a better place
+for you and me. So, if you are a coder, consider joining me on GitHub. As a tester,
+get paid for running my demo!
     </p><p>
 Cheers,
     </p><p>
